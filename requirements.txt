@@ -19,7 +19,6 @@ itypes==1.2.0
 Jinja2==3.0.3
 Markdown==3.3.6
 MarkupSafe==2.0.1
-object-detection==0.1
 packaging==21.3
 psycopg2==2.9.3
 pyparsing==3.0.6
