@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import cloudinary
 import django_heroku
+import dj_database_url
 
 print("os.environ.get('CLOUD_NAME')",os.environ.get('CLOUD_NAME'))
 cloudinary.config( 
@@ -101,7 +102,7 @@ DATABASES = {
     }
 }
 
-
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
